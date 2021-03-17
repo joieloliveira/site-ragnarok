@@ -1,0 +1,393 @@
+/*global=======================================================*/
+@font-face {
+    font-family: 'Gadugi';
+    src:  url('font/gadugi-bold.ttf') format('Bold '),
+          url('font/gadugi-normal.ttf') format('normal ');
+  }
+:root{
+    --vinho: #9E4F51;
+    --amarelo-claro: #F4E7D5;
+    --light-green: #3dd705;
+    --red: #e92929;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainBox{
+    max-width: 1200px;
+	margin: auto;
+}
+html{
+    font-family: 'Gadugi', Fallback, sans-serif;
+}
+/*cabeçalho estatus============================================*/
+.boxHeader{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+}
+.boxHeader .statusHeader{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 70%;
+    padding: 8px;
+}
+.boxHeader .statusHeader .tresPontos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px 0 10px;
+}
+.boxHeader .statusHeader .tresPontos img{
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+.boxHeader .statusHeader .status{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px 0 10px;
+}
+.boxHeader .statusHeader .status .statusOn{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+}
+.boxHeader .statusHeader .status p{
+    margin-left: 10px;
+}
+.boxHeader .statusHeader .jogadoresOn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+}
+/*cabeçalho background=========================================*/
+.menuHeader{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+    background-image: url(img/headerBG.jpeg);
+    background-size: 1200px 268px;
+    width: 100%;
+    height: 268px;
+}
+.menuHeader .menuTop{
+    display: flex;/*alinha itens ao meio*/
+    align-items:flex-start;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+}
+/*login=========================================================*/
+.menuHeader .menuTop :nth-child(7){
+    background-color: white;
+    border-radius: 0.20rem;
+    color: rgb(172, 15, 15);
+    padding: 5px 20px 5px 20px;
+    margin-top: -55px;
+}
+.menuHeader .menuTop a{
+    text-decoration: none;
+    color: ivory;
+    margin: -50px 12px 0 12px;
+    font-size: 70%;
+    
+}
+.menuHeader .menuTop :first-child{
+    margin: 0px 90px 0 -90px;
+    margin-top: -44px;
+}
+.menuHeader .menuTop img{
+    height: 3rem;
+    width: 7rem;
+}
+.menuHeader .HeaderAvatar{
+    height: 200px;
+    width: 370px;
+    margin-bottom: -35px;
+}
+/*cabeçalho cards manu=========================================*/
+.menuHeader .boxMenuDown{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    font-size: 75%;
+    margin-bottom: -90px;
+}
+.menuHeader .boxMenuDown .menuDown{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.20rem;
+    margin: 0 10px 0 10px;
+    width: 11rem;
+    height: 4rem;
+}
+.menuHeader .boxMenuDown .menuDown .MenuDownNumber{
+    color: var(--vinho);
+    font-size: 300%;
+}
+.menuHeader .boxMenuDown .menuDown .menuDowText .MenuDownTittle{
+    color: var(--vinho);
+}
+/*boxBody======================================================*/
+.boxBody{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+}
+/*sobre========================================================*/
+.boxAboutServer{
+    width: 70%;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    margin-top: 50px;
+}
+.boxAboutServer p{
+    margin-bottom: 10px;
+}
+.boxAboutServer .boxAboutServerImg img{
+    width: 250px;
+    height: 280px;
+}
+.boxAboutServer .sobreComece{
+    display: flex;/*alinha itens ao meio*/
+    flex-direction: column;
+    margin: 10px;
+}
+.boxAboutServer .sobreComece .comece{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+}
+.boxAboutServer .sobreComece .comece #boxComece{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-flow: wrap;
+    margin-top: -10px;
+}
+.boxAboutServer .sobreComece .comece #boxComece .boxComece{
+    background-color: var(--amarelo-claro);
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    opacity: 0.9;
+    padding: 5px;
+    margin: 3px 7px 3px 7px;
+    width: 200px;
+    height: 40px;
+    border-radius: 0.40rem;
+}
+.boxAboutServer .sobreComece .comece #boxComece :hover{
+    background-color: #9E4F51;
+    color: snow;
+}
+/*noticias=====================================================*/
+.boxNoticias{
+    width: 70%;
+    display: flex;/*alinha itens ao meio*/
+    flex-direction: column;
+    margin: 10px;
+}
+.boxNoticias h3{
+    margin-bottom: 15px;
+}
+.boxNoticias .boxNoticiasCards{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+}
+.boxNoticias .boxNoticiasCards .cardNoticias p{
+    margin: 10px;
+}
+.boxNoticias .boxNoticiasCards .cardNoticias{
+    display: flex;/*alinha itens ao meio*/
+    flex-direction: column;
+    width: 24%;
+    height: 25%;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+/*features===================================================*/
+.boxFeatures img{
+    width: 40%;
+    height: 40%;
+}
+.boxFeatures{
+    width: 70%;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+    margin: 10px;
+}
+.boxFeatures .boxFeaturesInterno{
+    margin: 10px;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+}
+.boxFeatures .boxFeaturesInterno .esquerdaFeatures{
+    margin: 10px;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+}
+.boxFeatures .boxFeaturesInterno .esquerdaFeatures .cardFeatures{
+    margin: 10px;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    border-radius: 0.80rem 0 0.80rem 0;
+    background-color: rgb(114, 167, 153);
+    width: 16rem;
+    height: 3rem;
+    color:  rgb(240, 227, 56);
+}
+.boxFeatures .boxFeaturesInterno .direitaFeatures .cardFeatures{
+    margin: 10px;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    border-radius: 0.80rem 0 0.80rem 0;
+    background-color: rgb(114, 167, 153);
+    width: 16rem;
+    height: 3rem;
+    color:  rgb(240, 227, 56);
+}
+/*boxAssassin================================================*/
+.boxAssassin .boxAssassinImg img{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 35px;
+    margin-left: 35px;
+}
+.boxAssassin{
+    margin-top: 40px;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    background-color: var(--vinho);
+    width: 1200px;
+    height: 160px;
+}
+.boxAssassin .boxAssassin999{
+    color: snow;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+.boxAssassin .boxAssassin999 :nth-child(1){
+    font-size: 140%;
+}
+/*woeBox=====================================================*/
+.woeBox .woeTresBox .woeCharBox img{
+    width: 15rem;
+    height: 15rem;
+}
+.woeBox .woeTresBox .woeFlagBox img{
+    width: 6rem;
+    height: 8rem;
+}
+.woeBox{
+    width: 70%;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+    margin: 2rem;
+}
+.woeBox .woeTresBox{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    margin: 2rem;
+}
+.woeBox .woeTresBox .woeFlagBox{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    margin: 1rem;
+    width: 17rem;
+    height: 10rem;
+    padding: 2rem;
+    border-style: solid;
+    border-Color:rgb(175, 173, 173);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+.woeBox .woeTresBox .TEXT{
+    display: flex;/*alinha itens ao meio*/
+    flex-direction: column;
+    margin: 2rem;
+}
+.woeBox .woeTresBox .TEXT p{
+    font-size: 70%;
+}
+.woeBox .woeTresBox .TEXT :nth-child(1){
+    font-size: 120%;
+}
+/*woeRulesBox================================================*/
+.woeBox .woeRules img{
+    width: 70%;
+    height: 60%;
+    margin-left: 40px;
+}
+.woeBox .woeRules{
+    width: 90%;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    background-color: var(--amarelo-claro);
+    padding: 10px;
+}
+.woeBox .woeRulesText{
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: center;/*alinha itens ao meio*/
+    flex-direction: column;
+}
+.woeBox .woeRulesText :nth-child(1){
+    color: var(--vinho);
+}
+/*footer*/
+.boxFooter{
+    width: 1200px;
+    height: 9rem;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: flex-end;/*alinha itens ao meio*/
+    flex-direction: column;
+    font-size: 60%;
+    margin-top: -110px;
+    z-index: -1;
+}
+.boxFooter .Footer{
+    background-color: black;
+    width: 100%;
+    display: flex;/*alinha itens ao meio*/
+    align-items: center;/*alinha itens ao meio*/
+    justify-content: flex-end;/*alinha itens ao meio*/
+    flex-direction: column;
+}

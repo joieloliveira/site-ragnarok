@@ -1,0 +1,32 @@
+AMARELO ESCURO:
+#DEB57E
+
+AMARELO CLARO:
+#F4E7D5
+
+VERMELHO VINHO: (Hover)
+#9E4F51
+
+CINZA ESCURO: (Footer)
+#9E4F51
+
+CINZA CLARO:
+#A3A3A3
+
+PRETO: (Footer e Status Bar)
+#000000
+
+*****************************************************
+
+FONTE TITULO E BOTÕES:
+Gadugi - Bold - 18
+
+FONTE TEXTO
+Gadugi - Regular - 12
+
+*****************************************************
+GUERRA DO EMPERIUM
+Gadugi - Bold - 30
+
+FONTE TEXTO
+Gadugi - Regular - 15
